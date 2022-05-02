@@ -326,3 +326,123 @@ print(total5)
 #altro ciclo per ottenere lo stesso risultato
 
 #risultato: 2318
+
+'''
+#XXXXXX  LEZIONE AVANZATA SU CICLI DI 'WHILE' E 'FOR'  XXXXXX  
+
+#XXXXX  WHILE LOOPS  XXXXX
+'''
+
+total = 0
+for i in range(1,5):
+  total += i
+print(total)
+
+#risultato: 10
+
+total2 = 0
+j = 1
+while j < 5:
+  total2 += j 
+  j += 1
+print(total2)
+#codice per definire una condizione loop di 'while'
+#leggo (once we get to the while loop check if j is less than 5 and since its true do the following:)
+#total2 si somma a j con risultato 1, il loop while continua fin quando j sarà uguale a 5
+#di conseguenza avrò diversi step: tot = j(1), tot = 1+j(2), tot = 3 + j(3), tot = 6 + j(4).
+
+#il loop termina a tot = 10 perchè la condizione si blocca a j = 5.
+
+given_list = [5, 4, 4, 3, 1, -2, -3, -5]
+
+total3 = 0
+i = 0
+while given_list[i] > 0:
+  total3 += given_list[i]
+  i += 1
+print(total3)
+#codice che funziona solo se in lista c'è lmeno un numero negativo
+
+#risultato: 17
+
+given_list = [5, 4, 4, 3, 1]
+
+total3 = 0
+i = 0
+while i < len(given_list) and given_list[i] > 0:
+  total3 += given_list[i]
+  i += 1
+print(total3)
+#in questo caso il codice funziona perchè non inserisco l'indice dell'elemento lista
+#utilizzo il codice lunghezza(lista)
+
+#risultato: 17
+
+given_list2 = [5, 4, 4, 3, 1, -2, -3, -5]
+total4 = 0
+for element in given_list2:
+  if element <= 0:
+    break
+  total4 += element
+print(total4)
+#in questo esempio includiamo sia i numeri positivi che negativi
+#condizione (per ogni elemento in lista, somma gli elementi al tot4)
+#altrimenti se negativo, interrompi il loop. (si blocca a -2)
+
+#risultato: -2
+
+#given_list2 = [5, 4, 4, 3, 1, -2, -3, -5]
+
+total5 = 0
+i = 0
+while True:
+  total5 += given_list2[i]
+  i += 1
+  if given_list2[i] <= 0:
+    break
+print(total5)
+#stesso codice ma usando la condizione di 'while True'
+
+#risultato: 17
+
+'''
+#XXX  EXERCISE  XXX
+'''
+
+#calculate a for or while loop to obtain the sum of all negatives numbers.
+#given_list3 = [7, 5, 4, 4, 3, 1, -2, -3, -5, -7]
+
+given_list3 = [7, 5, 4, 4, 3, 1, -2, -3, -5, -7]
+total5 = 0
+i = 0
+
+for element in given_list3:
+  if element <= 0:
+    total5 += element
+print(total5)
+
+#risultato: -17
+
+'''
+#XXXXX  MORE ABOUT FOR LOOPS  XXXXX
+'''
+
+a = ['apple', 'banana', 'republic']
+print(a)
+
+#result: ['apple', 'banana', 'republic']
+
+for element in a:
+  print(element)
+
+#result: ['apple', 'banana', 'republic']
+
+for i in range(0,3): #0, 1, 2
+  print(a[i])
+
+#result: ['apple', 'banana', 'republic']
+
+for i in range(len(a)):
+    print(a[i])
+
+#result: ['apple', 'banana', 'republic']
