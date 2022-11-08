@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[26]:
-
 
 '''
 #XXXXX MACHINE LEARNING WITH PYTHON XXXXX
@@ -43,9 +38,6 @@ df = df[[ 'Adj. Close', 'HL_PCT', 'PCT_change', 'Adj. Volume']]
 #at the end we saved the new df with the new columns we need
 
 
-# In[27]:
-
-
 '''
 #Regression Features and Labels - Practical Machine Learning Tutorial with Python p.3
 #VIDEO 3 sentdex
@@ -83,9 +75,6 @@ df.head(5)
 #we cleaned the df from all the useless data and the null values
 
 
-# In[29]:
-
-
 '''
 #Regression Training and Testing - Practical Machine Learning Tutorial with Python p.4
 #VIDEO 3 sentdex
@@ -117,23 +106,8 @@ accuracy
 #we are calculating the accuracy of the prediction in value changing from our previous analysis
 
 
-# In[30]:
-
-
 '''
 #Regression forecasting and predicting - Practical Machine Learning Tutorial with Python p.5
 #VIDEO 5 sentdex
 '''
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
